@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"ir1838_i2c\startup_stm32f103xb.o"
+"ir1838_i2c\main.o"
+"ir1838_i2c\stm32f1xx_it.o"
+"ir1838_i2c\stm32f1xx_hal_msp.o"
+"ir1838_i2c\clcd_i2c.o"
+"ir1838_i2c\stm32f1xx_hal_gpio_ex.o"
+"ir1838_i2c\stm32f1xx_hal_i2c.o"
+"ir1838_i2c\stm32f1xx_hal.o"
+"ir1838_i2c\stm32f1xx_hal_rcc.o"
+"ir1838_i2c\stm32f1xx_hal_rcc_ex.o"
+"ir1838_i2c\stm32f1xx_hal_gpio.o"
+"ir1838_i2c\stm32f1xx_hal_dma.o"
+"ir1838_i2c\stm32f1xx_hal_cortex.o"
+"ir1838_i2c\stm32f1xx_hal_pwr.o"
+"ir1838_i2c\stm32f1xx_hal_flash.o"
+"ir1838_i2c\stm32f1xx_hal_flash_ex.o"
+"ir1838_i2c\stm32f1xx_hal_exti.o"
+"ir1838_i2c\stm32f1xx_hal_tim.o"
+"ir1838_i2c\stm32f1xx_hal_tim_ex.o"
+"ir1838_i2c\system_stm32f1xx.o"
+--strict --scatter "ir1838_I2C\ir1838_I2C.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "ir1838_I2C.map" -o ir1838_I2C\ir1838_I2C.axf
